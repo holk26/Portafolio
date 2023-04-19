@@ -1,6 +1,7 @@
 import Layout from "../componenst/Layout";
 import Image from "next/image";
 import Skills from "../componenst/Skills";
+import Portafolio from "../componenst/Portafolio";
 
 const Index = () => (
   <Layout>
@@ -50,6 +51,49 @@ const Index = () => (
         <div className="card bg-ligth">
           <div className="card-body">
             <h1>Experience</h1>
+            <ul>
+              <li>
+                <h3>Google LLC</h3>
+                <h5>2000-2007</h5>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa repellendus earum inventore sit asperiores impedit esse
+                  suscipit officia corrupti sint, odio quisquam. Enim sapiente
+                  incidunt ex, neque numquam amet sed.
+                </p>
+              </li>
+              <li>
+                <h3>Facebook LLC</h3>
+                <h5>2000-2007</h5>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa repellendus earum inventore sit asperiores impedit esse
+                  suscipit officia corrupti sint, odio quisquam. Enim sapiente
+                  incidunt ex, neque numquam amet sed.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Portafolio */}
+
+    <div className="row">
+      <div className="col-md-12">
+        <div className="card bg-ligth">
+          <div className="row">
+            <div className="col-md-12 mt-4">
+              <h1 className="text-center">Portafolio</h1>
+            </div>
+
+            <Portafolio />
+            <Portafolio />
+            <Portafolio />
+            <Portafolio />
+            <Portafolio />
+            
           </div>
         </div>
       </div>
