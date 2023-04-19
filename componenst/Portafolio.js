@@ -1,5 +1,7 @@
+
+
 const Portafolio = () => (
-    <div className="col-md-4 mt-4">
+  <div className="col-md-4 mt-4">
       <div className="card">
         <img
           src="https://avatars.githubusercontent.com/u/23020718?v=4"
@@ -12,8 +14,7 @@ const Portafolio = () => (
           <a href="#">Know more</a>
         </div>
       </div>
-    </div>
-  );
-  
-  export default Portafolio;
-  
+  </div>
+);
+
+export default Portafolio;
