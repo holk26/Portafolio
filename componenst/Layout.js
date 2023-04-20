@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import NProgress from "nprogress";
 
 const Layout = ({ children }) => {
+  
   const [isVisible, setIsVisible] = useState(false);
   const router = useRouter();
 
