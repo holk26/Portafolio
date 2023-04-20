@@ -1,10 +1,14 @@
-import { use } from "react";
 import Layout from "../../componenst/Layout";
+import Error from "../_error";
 
-const Github = ({user}) => {
+const Github = ({user, statusCode}) => {
+
+  if(statusCode){
+    return <Error statusCode={statusCode} />
+  }
 
   return (
-    <Layout>
+    <Layout footer={false}>
       <div className="row">
         <div className="col-md-4 offset-md-4">
             <div className="card card-body text-center">
@@ -27,9 +31,12 @@ const Github = ({user}) => {
 export async function getServerSideProps() {
   const res = await fetch("https://api.github.com/users/holk26");
   const data = await res.json();
+
+  const statusCode = res.status > 200 ? res.status : false;
   return {
     props: {
       user: data,
+      statusCode
     },
   };
 }

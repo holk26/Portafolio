@@ -5,8 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import NProgress from "nprogress";
 
-const Layout = ({ children }) => {
-  
+const Layout = ({ children, footer = true }) => {
   const [isVisible, setIsVisible] = useState(false);
   const router = useRouter();
 
@@ -41,12 +40,14 @@ const Layout = ({ children }) => {
       >
         <main className="container py-4">{children}</main>
         <script src="https://unpkg.com/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <footer className="bg-dark text-light text-center">
-          <div className="container p-4">
-            <h1 className="text-light">&copy; Homero Cabrera Araque</h1>
-            <p>All rights Reserverd {new Date().getFullYear()}</p>
-          </div>
-        </footer>
+        {footer && (
+          <footer className="bg-dark text-light text-center">
+            <div className="container p-4">
+              <h1 className="text-light">&copy; Homero Cabrera Araque</h1>
+              <p>All rights Reserverd {new Date().getFullYear()}</p>
+            </div>
+          </footer>
+        )}
       </motion.div>
     </>
   );
