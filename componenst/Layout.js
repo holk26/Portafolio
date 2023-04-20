@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
         animate={{ y: isVisible ? 0 : -50, opacity: isVisible ? 1 : 0 }}
       >
         <main className="container py-4">{children}</main>
+        <script src="https://unpkg.com/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <footer className="bg-dark text-light text-center">
           <div className="container p-4">
             <h1 className="text-light">&copy; Homero Cabrera Araque</h1>
