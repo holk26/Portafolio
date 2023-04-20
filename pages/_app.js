@@ -1,7 +1,13 @@
 import "bootswatch/dist/zephyr/bootstrap.min.css";
 //import "bootswatch/dist/lux/bootstrap.min.css";
-import "../global.css"
+import "../global.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  );
 }

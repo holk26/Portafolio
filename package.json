@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/analytics": "^1.0.0",
     "bootswatch": "^5.2.3",
     "framer-motion": "^10.12.4",
     "next": "^13.3.0",
