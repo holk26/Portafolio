@@ -1,10 +1,10 @@
-import Layout from "../../componenst/Layout";
-import Portafolio from "../../componenst/Portafolio";
+import Layout from "../../../componenst/Layout";
+import Portafolio from "../../../componenst/Portafolio";
 
-const Blog = () => (
+const Post = () => (
   <Layout footer={false}>
     <div className="row">
-      <h1>Blog</h1>
+      <h1>Post</h1>
       <Portafolio />
       <Portafolio />
       <Portafolio />
@@ -14,4 +14,4 @@ const Blog = () => (
   </Layout>
 );
 
-export default Blog;
+export default Post;

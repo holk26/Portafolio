@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 const Navbar = () => {
   const router = useRouter();
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -23,17 +24,17 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className={`nav-link ${router.pathname === '/' ? 'active' : ''}`} aria-current="page" href="/">
+              <Link className={`nav-link ${router.asPath === '/' ? 'active' : ''}`} aria-current="page" href="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${router.pathname === '/blog' ? 'active' : ''}`} aria-current="page" href="/blog">
+              <Link className={`nav-link ${router.asPath.includes('/blog') ? 'active' : ''}`} aria-current="page" href="/blog">
                 Blog
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${router.pathname === '/github' ? 'active' : ''}`} aria-current="page" href="/github">
+              <Link className={`nav-link ${router.asPath.includes('/github') ? 'active' : ''}`} aria-current="page" href="/github">
                 Github
               </Link>
             </li>
