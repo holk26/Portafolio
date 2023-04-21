@@ -1,4 +1,4 @@
-import Layout from "../componenst/Layout";
+import Layout from "../components/Layout";
 
 const _error = ({statusCode}) => {
     return(

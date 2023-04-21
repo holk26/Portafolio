@@ -54,9 +54,9 @@ const Navbar = () => {
                 Github
               </Link>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -66,22 +66,22 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
-                  <h6 class="dropdown-header">Perfil</h6>
+                  <h6 className="dropdown-header">Perfil</h6>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="/account">
                     Iniciar sesion
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="#">
                     Registrate
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" href="#">
                     Cerrar Sesion
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>

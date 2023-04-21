@@ -1,5 +1,5 @@
-import Layout from "../../../componenst/Layout";
-import Portafolio from "../../../componenst/Portafolio";
+import Layout from "../../../components/Layout";
+import Portafolio from "../../../components/Portafolio";
 
 const Post = () => (
   <Layout footer={false}>

@@ -1,4 +1,4 @@
-import Layout from "../componenst/Layout";
+import Layout from "../components/Layout";
 
 const custom404 = () => (
     <Layout>
